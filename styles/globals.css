@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+body {
+    @apply bg-black text-white;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/* Tweet Button Hover Effect */
+.tweet-button {
+    @apply bg-sky-500 hover:bg-opacity-80 transition cursor-pointer rounded-full flex items-center justify-center h-14 w-14 p-4;
+}
+
+
+.link-hover {
+    @apply hover:underline cursor-pointer;
+}
